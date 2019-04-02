@@ -53,8 +53,8 @@ class thumbnail extends Controller
 
         //$videoUrl = public_path('uploads\avi.avi');
         $this->FFMpeg = FFMpeg::create([
-            'ffmpeg.binaries'  => 'D:\xampp\htdocs\Newfolder\ffmpeg\bin\ffmpeg.exe',
-            'ffprobe.binaries' => 'D:\xampp\htdocs\Newfolder\ffmpeg\bin\ffprobe.exe',
+            'ffmpeg.binaries'  => base_path() .'/bin/ffmpeg.exe',
+            'ffprobe.binaries' => base_path() .'/bin/ffprobe.exe',
             Log::debug('Chay den day khong ?')
 
         ]);
